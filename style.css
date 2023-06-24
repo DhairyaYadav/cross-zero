@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Ubuntu&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Josefin+Sans:wght@500&family=Ubuntu&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Baloo+2&family=Josefin+Sans:wght@500&family=Ubuntu&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 2rem;
+    padding: 0 14px;
+    text-shadow: -4px 5px rgb(117, 47, 47);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+nav {
+    background-color: #a52a2a;
+    color: white;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.gamecontainer {
+    background-color: rgb(138, 43, 227, 0.3);
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 20vh);
+    padding-top: 136px;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box:hover {
+    background-color: rgb(138, 43, 227, 0.8);
+    ;
+    cursor: pointer;
+}
+
+.gameinfo {
+    padding: 34px;
+    font-family: 'Baloo 2', cursive;
+
+}
+
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+#reset {
+    margin: 14px 23px;
+    padding: 6px 12px;
+    background-color: bisque;
+    border-color: blanchedalmond;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+}
+
+.info {
+    margin: 0 23px;
+    font-size: 25px;
+    color: #2f6073;
+    font-weight: 800;
+}
+
+@media screen and (max-width:900px) {
+    .gamecontainer {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 22vw);
+        grid-template-rows: repeat(3, 13vh);
+        padding-top: 96px;
+    }
+
+    .gameinfo h1 {
+        font-size: 1rem;
+    }
+
+}
